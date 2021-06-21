@@ -214,6 +214,7 @@
 		9628B60F2652764700C93AA7 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9628B60C2652764700C93AA7 /* SF-Pro-Rounded-Bold.otf */; };
 		9628B6122652764B00C93AA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9628B6112652764B00C93AA7 /* Localizable.strings */; };
 		9628B6142652765000C93AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9628B6132652765000C93AA7 /* LaunchScreen.storyboard */; };
+		96DC8E1D26808BDD00FEC74B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96DC8E1C26808BDD00FEC74B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -428,6 +429,7 @@
 		9628B6112652764B00C93AA7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9628B6132652765000C93AA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9628B6162652765800C93AA7 /* NBCOT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NBCOT-Bridging-Header.h"; sourceTree = "<group>"; };
+		96DC8E1C26808BDD00FEC74B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D11C3F7B757B1BF67FC2F4F4 /* Pods-NBCOT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCOT.debug.xcconfig"; path = "Target Support Files/Pods-NBCOT/Pods-NBCOT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -494,6 +496,7 @@
 				9628B6082652764700C93AA7 /* Fonts */,
 				9628B4062652754900C93AA7 /* Info.plist */,
 				9628B6132652765000C93AA7 /* LaunchScreen.storyboard */,
+				96DC8E1C26808BDD00FEC74B /* GoogleService-Info.plist */,
 				9628B6162652765800C93AA7 /* NBCOT-Bridging-Header.h */,
 				9628B4012652754900C93AA7 /* Assets.xcassets */,
 			);
@@ -1329,6 +1332,7 @@
 				9628B3F22652754600C93AA7 /* Frameworks */,
 				9628B3F32652754600C93AA7 /* Resources */,
 				8865F29C616FA108CB8485C5 /* [CP] Embed Pods Frameworks */,
+				96DC8E1E26808C1D00FEC74B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1377,6 +1381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9628B5F62652762F00C93AA7 /* Onboarding.Chart.json in Resources */,
+				96DC8E1D26808BDD00FEC74B /* GoogleService-Info.plist in Resources */,
 				9628B6122652764B00C93AA7 /* Localizable.strings in Resources */,
 				9628B60E2652764700C93AA7 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				9628B60D2652764700C93AA7 /* SF-Pro-Rounded-Semibold.otf in Resources */,
@@ -1405,6 +1410,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NBCOT/Pods-NBCOT-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		96DC8E1E26808C1D00FEC74B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		A1A39AF87B1E1145AC2E4520 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1764,6 +1788,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = "$(SRCROOT)/NBCOT/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1771,7 +1797,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.nbcot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NBCOT Development Profile";
@@ -1789,6 +1815,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = "$(SRCROOT)/NBCOT/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1796,7 +1823,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.nbcot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NBCOT AppStore Profile";
