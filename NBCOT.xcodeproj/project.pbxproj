@@ -14,6 +14,9 @@
 		9628B60F2652764700C93AA7 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9628B60C2652764700C93AA7 /* SF-Pro-Rounded-Bold.otf */; };
 		9628B6122652764B00C93AA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9628B6112652764B00C93AA7 /* Localizable.strings */; };
 		9628B6142652765000C93AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9628B6132652765000C93AA7 /* LaunchScreen.storyboard */; };
+		96AD352D2750C9940098D472 /* SetSelectCourseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD352C2750C9940098D472 /* SetSelectCourseRequest.swift */; };
+		96AD35302750C9B00098D472 /* GetSelectedCourseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD352F2750C9B00098D472 /* GetSelectedCourseResponse.swift */; };
+		96AD35322750C9C00098D472 /* GetSelectedCourseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AD35312750C9C00098D472 /* GetSelectedCourseRequest.swift */; };
 		96BF34EE26B28D3400AEF6D3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF34ED26B28D3400AEF6D3 /* WidgetKit.framework */; };
 		96BF34F026B28D3400AEF6D3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF34EF26B28D3400AEF6D3 /* SwiftUI.framework */; };
 		96BF34F526B28D3F00AEF6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BF34F426B28D3F00AEF6D3 /* Assets.xcassets */; };
@@ -302,6 +305,9 @@
 		9628B6112652764B00C93AA7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9628B6132652765000C93AA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9628B6162652765800C93AA7 /* NBCOT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NBCOT-Bridging-Header.h"; sourceTree = "<group>"; };
+		96AD352C2750C9940098D472 /* SetSelectCourseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSelectCourseRequest.swift; sourceTree = "<group>"; };
+		96AD352F2750C9B00098D472 /* GetSelectedCourseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSelectedCourseResponse.swift; sourceTree = "<group>"; };
+		96AD35312750C9C00098D472 /* GetSelectedCourseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSelectedCourseRequest.swift; sourceTree = "<group>"; };
 		96BF34EC26B28D3400AEF6D3 /* StatsWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatsWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BF34ED26B28D3400AEF6D3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		96BF34EF26B28D3400AEF6D3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -664,6 +670,23 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		96AD352B2750C98A0098D472 /* SetSelectCourse */ = {
+			isa = PBXGroup;
+			children = (
+				96AD352C2750C9940098D472 /* SetSelectCourseRequest.swift */,
+			);
+			path = SetSelectCourse;
+			sourceTree = "<group>";
+		};
+		96AD352E2750C9A60098D472 /* GetSelectedCourse */ = {
+			isa = PBXGroup;
+			children = (
+				96AD352F2750C9B00098D472 /* GetSelectedCourseResponse.swift */,
+				96AD35312750C9C00098D472 /* GetSelectedCourseRequest.swift */,
+			);
+			path = GetSelectedCourse;
+			sourceTree = "<group>";
+		};
 		96BF34F126B28D3400AEF6D3 /* StatsWidgets */ = {
 			isa = PBXGroup;
 			children = (
@@ -954,6 +977,8 @@
 		96BF355B26B28D8400AEF6D3 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				96AD352E2750C9A60098D472 /* GetSelectedCourse */,
+				96AD352B2750C98A0098D472 /* SetSelectCourse */,
 				96BF355C26B28D8400AEF6D3 /* GetCourcesRequest.swift */,
 				96BF355D26B28D8400AEF6D3 /* GetReferences */,
 				96BF356026B28D8400AEF6D3 /* GetCourcesResponseMapper.swift */,
@@ -1838,6 +1863,7 @@
 				96BF365426B28D8400AEF6D3 /* PaygateManagerCore.swift in Sources */,
 				96BF371626B28D8500AEF6D3 /* OSlideTimeView.swift in Sources */,
 				96BF368A26B28D8400AEF6D3 /* GetBriefRequest.swift in Sources */,
+				96AD35302750C9B00098D472 /* GetSelectedCourseResponse.swift in Sources */,
 				96BF36A226B28D8400AEF6D3 /* SplashViewModel.swift in Sources */,
 				96BF370526B28D8400AEF6D3 /* WelcomeSlide3View.swift in Sources */,
 				96BF36D226B28D8400AEF6D3 /* PaygateOptionView.swift in Sources */,
@@ -1926,6 +1952,7 @@
 				96BF366626B28D8400AEF6D3 /* TestStatsManager.swift in Sources */,
 				96BF363B26B28D8400AEF6D3 /* StringExtension.swift in Sources */,
 				96BF36DF26B28D8400AEF6D3 /* TestStatsProgressView.swift in Sources */,
+				96AD35322750C9C00098D472 /* GetSelectedCourseRequest.swift in Sources */,
 				96BF367726B28D8400AEF6D3 /* Reference.swift in Sources */,
 				96BF36A826B28D8400AEF6D3 /* SCTakeTestCell.swift in Sources */,
 				96BF364A26B28D8400AEF6D3 /* PaddingPickerView.swift in Sources */,
@@ -2012,6 +2039,7 @@
 				96BF370626B28D8400AEF6D3 /* WelcomeSlide2View.swift in Sources */,
 				96BF363C26B28D8400AEF6D3 /* GlobalDefinitions.swift in Sources */,
 				96BF36D726B28D8400AEF6D3 /* TestStatsAnswerCell.swift in Sources */,
+				96AD352D2750C9940098D472 /* SetSelectCourseRequest.swift in Sources */,
 				96BF36A026B28D8400AEF6D3 /* SettingsViewController.swift in Sources */,
 				96BF370A26B28D8400AEF6D3 /* OSlideReferencesView.swift in Sources */,
 			);
@@ -2177,7 +2205,7 @@
 				CODE_SIGN_ENTITLEMENTS = NBCOT/NBCOT.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = "$(SRCROOT)/NBCOT/Resource/Info.plist";
@@ -2186,7 +2214,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.nbcot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NBCOT Development Profile";
@@ -2206,7 +2234,7 @@
 				CODE_SIGN_ENTITLEMENTS = NBCOT/NBCOT.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = "$(SRCROOT)/NBCOT/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2214,7 +2242,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.nbcot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NBCOT AppStore Profile";
@@ -2232,7 +2260,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2241,7 +2269,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.nbcot.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NBCOT Stats AppStore";
@@ -2259,7 +2287,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2W4U9UWRKZ;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2268,7 +2296,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = exam.nbcot.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "NBCOT Stats AppStore";
