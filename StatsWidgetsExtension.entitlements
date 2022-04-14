@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.nbcot.widgets</string>
+		<string>group.nbcot.widget</string>
 	</array>
 </dict>
 </plist>
