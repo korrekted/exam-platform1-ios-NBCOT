@@ -6,7 +6,7 @@
 //
 
 final class GlobalDefinitions {
-    static let domainUrl = "https://exams.quantresear.ch"
+    static let domainUrl = "https://exams.mastrapi.com"
     static let apiKey = "VjsptHCcIl5N1jKB"
 
     static let sdkDomainUrl = "https://analytics.korrekted.com"
